@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/create" method="POST">
+
+        <label for="name">Name:</label>
+        <input type="text" name="name" required>
+        <br><br>
+
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description" required>
+        <br><br>
+
+        <label for="instructions">instructions:</label>
+        <input type="text" id="instructions" name="instructions" required>
+        <br><br>
+
+        <label for="under_30">under_30:</label>
+        <input type="radio" id="no" name="under_30" value=0> <label for="no">No</label>
+        <input type="radio" id="yes" name="under_30" value=1> <label for="yes">Yes</label>
+        <br><br>
+
+        <label for="made">Date Made:</label>
+        <input type="date" id="date_made" name="made" required>
+        <br><br>
+        <!-- name must match purple in function -->
+        <input type="hidden" name="user_id" value="{{session['user_id']}}">
+        <input type="submit" value="Submit">
+
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        {% for message in messages %}
+        <p>{{message}}</p>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+
+
+    </form>
+
+</body>
+
+</html>

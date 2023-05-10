@@ -1,0 +1,65 @@
+/* Set background color of body */
+body {
+    background-color: #f8f9fa;
+}
+
+  /* Set margin for form elements */
+.form-label,
+.form-control,
+.btn {
+    margin: 10px 0;
+}
+
+  /* Style the forms */
+form {
+    padding: 20px;
+    border-radius: 5px;
+}
+
+  /* Style the register form */
+.register-form {
+    background-color: #343a40;
+    color: #fff;
+}
+
+  /* Style the login form */
+.login-form {
+    background-color: #212529;
+    color: #fff;
+}
+
+  /* Style the form headings */
+h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+  /* Style the form buttons */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+  /* Style the form alerts */
+.alert {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}  
